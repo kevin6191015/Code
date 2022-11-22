@@ -1,4 +1,4 @@
-#include <array<int , 3> project[mxn];bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 const int mxn=2e5;
 array<int , 3> project[mxn];

@@ -7,12 +7,12 @@ bool isSafe(int row , int col){
     return (row>=0)&&(col>=0)&&(row<ROW)&&(col<COL);
 }
 
-void DFS(int M[ROW][COL],int row,int col,bool visited[ROW][COL]){
+void DFS(int M[ROW][COL],int col,int row,bool visited[ROW][COL]){
         int move[8][2]={ {-1,1},{-1,0},{-1,-1},{0,1},{0,-1},{1,1},{1,0},{1,-1} };
         
         for(int i=0;i<8;i++){
-            int newx=row+move[i][0];
-            int newy=col+move[i][1];
+            int newx=col+move[i][1];
+            int newy=row+move[i][0];
             if(isSafe(newx,newy)&&!visited[newx][newy]&&M[newx][newy]){
                 visited[newx][newy]=true;
                 DFS(M,newx,newy,visited);
@@ -41,8 +41,8 @@ int countIslands(int M[ROW][COL]){
 
 int main()
 {
-    int M[ROW][COL] = { { 1, 1, 0, 0, 0 },
-                        { 0, 1, 0, 0, 1 },
+    int M[ROW][COL] = { { 1, 1, 0, 0, 1 },
+                        { 0, 1, 0, 0, 0 },
                         { 1, 0, 0, 1, 1 },
                         { 0, 1, 0, 1, 0 },
                         { 1, 0, 1, 0, 1 } };
