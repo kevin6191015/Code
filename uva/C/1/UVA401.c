@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdbool.h>
 int main(){
 	char a[35];
 	char b[100];
@@ -36,5 +37,5 @@ int main(){
 		}
 		printf("\n");
 	}
-	
+	return 0;
 }
