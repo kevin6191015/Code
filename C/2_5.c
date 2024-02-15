@@ -8,6 +8,7 @@ typedef struct{
     int y;
     char *description;
 } Point;
+
 int main(void)
 {
     Point a1;
