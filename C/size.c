@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <limits.h>
 #include <float.h>
+
 typedef struct{
     int x;
     int y;
@@ -38,10 +39,10 @@ int main(void)
     printf("The sizeof double* is : %zu byte\n",sizeof(double*));
     printf("The sizeof float* is : %zu byte\n",sizeof(float*));
     printf("Your system is: %lu-bit\n", sizeof(void*) * 8);
-    printf("Struct.... \n");
+    printf("\nStruct.... \n");
     printf("a1.x : %d\n",a1.x);
     printf("a1.y : %d\n",a1.y);
-    printf("a1.y : %s\n",a1.description);
+    printf("a1.y : %s\n\n",a1.description);
 
     int *a;
     a = calloc(5,sizeof(int *));
