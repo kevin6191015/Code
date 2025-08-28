@@ -53,6 +53,6 @@ void tabulate(double (*f)(double), double first,
   num_intervals = ceil((last - first) / incr);
   for (i = 0; i <= num_intervals; i++) {
     x = first + i * incr;
-    printf("%10.5f %10.5f\n", x, (*f)(x));
+    printf("%10.5f %10.5f\n", x, f(x));
   }
 }
