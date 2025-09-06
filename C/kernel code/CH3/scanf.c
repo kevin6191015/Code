@@ -11,11 +11,16 @@ int main(void)
     num = scanf("%c %c",&c1,&c2);
     printf("c1:%c,c2:%c\n", c1, c2);
     printf("total read in number: %d\n",num);
-
     printf("Please enter one number and one character:");
     scanf("%d", &x1);
     scanf(" %c", &c1); //這邊前面的空格可以忽視零個到多個輸入的空白
     printf("x1:%d,c1:%c\n", x1, c1);
+
+    scanf ("%s ", s1);
+    printf("s1:%s\n", s1);
+
+    gets(s1);
+    printf("s1:%s", s1);
 
     return 0;
 }
